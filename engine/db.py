@@ -20,13 +20,13 @@ cursor.execute(query)
 
 
 # testing module
-app_name = "android studio"
-cursor.execute('SELECT path FROM sys_command WHERE name IN (?)', (app_name,))
-results = cursor.fetchall()
-print(results[0][0])
+# app_name = "android studio"
+# cursor.execute('SELECT path FROM sys_command WHERE name IN (?)', (app_name,))
+# results = cursor.fetchall()
+# print(results[0][0])
 
 # Create a table with the desired columns
-#cursor.execute('''CREATE TABLE IF NOT EXISTS contacts (id integer primary key, name VARCHAR(200), mobile_no VARCHAR(255), email VARCHAR(255) NULL)''')
+cursor.execute('''CREATE TABLE IF NOT EXISTS contacts (id integer primary key, name VARCHAR(200), mobile_no VARCHAR(255), email VARCHAR(255) NULL)''')
 
 
 # Specify the column indices you want to import (0-based index)
